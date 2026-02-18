@@ -1,4 +1,4 @@
-name: Deploy Angular (Pages)
+name: Deploy Angular
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       - run: npm run build -- --configuration production --base-href /
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist/kendo-angular-app/browser
 
   deploy:
     needs: build
