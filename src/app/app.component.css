@@ -1,0 +1,13 @@
+.app { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.sidebar { padding: 24px 18px; border-right: 1px solid rgba(0,0,0,.08); }
+.brand { margin-bottom: 18px; }
+.name { font-size: 18px; font-weight: 700; }
+.tagline { font-size: 13px; opacity: .75; margin-top: 4px; }
+
+.nav { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+.nav a { text-decoration: none; padding: 10px 12px; border-radius: 10px; color: inherit; }
+.nav a:hover { background: rgba(0,0,0,.05); }
+.nav a.active { background: rgba(0,0,0,.08); font-weight: 600; }
+
+.content { padding: 40px; }
+
