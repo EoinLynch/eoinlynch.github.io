@@ -1,4 +1,4 @@
-name: Deploy Angular
+name: Deploy Angular V2
 
 on:
   push:
