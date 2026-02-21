@@ -1,9 +1,7 @@
-<div class="app">
-  <aside class="sidebar">
-    <div class="brand">
-      <div class="name">Eoin Lynch</div>
-      <div class="tagline">Your one-line tagline here.</div>
-    </div>
+<header class="topbar">
+  <div class="topbar__inner">
+    <div class="brand">BIO &amp; PORTFOLIO<span class="dot">.</span></div>
+
 
     <nav class="nav">
       <a routerLink="/blog" routerLinkActive="active">Blog</a>
@@ -11,10 +9,41 @@
       <a routerLink="/about" routerLinkActive="active">About</a>
       <a href="https://github.com/EoinLynch" target="_blank" rel="noopener">GitHub</a>
     </nav>
-  </aside>
+    <a class="cta" href="#" (click)="$event.preventDefault()">DONATE</a>
+  </div>
+</header>
 
-  <main class="content">
+<main class="page">
+  <!-- Your hero section (you can later move this into Home page component) -->
+  <section class="hero">
+    <div class="hero__card">
+      <div class="portrait">
+        <!-- replace with your image path -->
+        <img src="assets/portrait.jpg" alt="Portrait">
+      </div>
+
+      <h1 class="title">Eoin Lynch</h1>
+      <p class="bio">
+Software Engineer
+
+      </p>
+
+      <div class="social">
+        <a class="icon" href="#" (click)="$event.preventDefault()" aria-label="Instagram">◎</a>
+        <a class="icon" href="#" (click)="$event.preventDefault()" aria-label="YouTube">▶</a>
+        <a class="icon" href="#" (click)="$event.preventDefault()" aria-label="X">𝕏</a>
+        <a class="icon" href="#" (click)="$event.preventDefault()" aria-label="TikTok">♪</a>
+        <a class="icon" href="#" (click)="$event.preventDefault()" aria-label="Facebook">f</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Routed pages render here -->
+  <section class="routed">
     <router-outlet></router-outlet>
-  </main>
-</div>
+  </section>
+</main>
+
+
 
