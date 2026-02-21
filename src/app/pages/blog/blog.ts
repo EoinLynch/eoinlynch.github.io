@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-blog',
-  imports: [],
+  standalone: true,
   templateUrl: './blog.html',
   styleUrl: './blog.css',
 })
-export class Blog {
-
-}
+export class Blog {}
